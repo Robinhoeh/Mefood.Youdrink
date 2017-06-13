@@ -1,0 +1,276 @@
+
+html{
+	font-size: 62.5%;
+} 
+
+
+
+body{
+	font-family: $primaryFont;
+	color: white;
+	background: linear-gradient( rgba(0, 0, 0, 0.55), 
+    rgba(0, 0, 0, 0.45)), url('../styles/assets/lakeParty.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	font-size: 50px;
+	color: orange;
+}
+
+h2{
+	font-size: 32px;
+	color: black;
+}
+
+h3{
+	font-size: 30px;
+}
+
+h4{
+	font-size: 20px;
+}
+
+main p{
+	font-size: 16px;
+}
+
+label{
+	font-size: 20px;
+}
+
+input{
+	width: 305px;
+	font-size: 15px;
+	margin: 15px auto;
+	border-radius: 4px;
+	border: none;
+	box-shadow: 1px 2px 10px #14171f;
+}
+
+span{
+	font-size: 20px;
+}
+
+
+ul{
+	list-style: none;
+	margin:0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+li{
+	width: 25%;
+}
+
+main{
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	width: 90%;
+    margin: 0 auto;
+}
+
+a{
+	font-size: 30px;
+	color: white;
+	text-shadow: 1px 1px 5px lightseagreen;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+.pageOneWrapper{
+	color: black;
+}
+
+
+
+.add-item button{
+	border-radius: 10px;
+	background: none;
+	border: none;
+	box-shadow: 1px 1px 1px slategrey;
+	background: darkcyan;
+	width: 200px;
+	margin: 30px auto;
+	padding: 6px;
+	font-size: 24px;
+	transition-duration: 0.3s;
+    cursor: pointer;
+	}
+
+.add-item button:hover{
+	box-shadow: 1px 1px 3px cyan;
+	color: darkcyan;
+	padding: 8px;
+	width: 30%;
+	color: black;
+}
+
+.display-item button{
+	border-radius: 10px;
+    background: none;
+    border: none;
+    box-shadow: 1px 1px 1px red;
+    background: darksalmon;
+    width: 141px;
+    margin: 30px auto;
+    padding: 1px;
+    font-size: 24px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.display-item button:hover{
+	box-shadow: 1px 1px 8px lavenderblush;
+	color: lavenderblush;
+	padding: 4px;
+	width: 161px;
+	background: indianred;
+}
+
+
+
+.formFlexContainer{
+	color: white;
+}
+
+
+.formItemOne, .formItemTwo{
+	display: flex;
+    flex-direction: column;
+}
+.flexOneTwo{
+	display: flex;
+    justify-content: space-around;
+}
+
+.formItemThree{
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+.formItemFour{
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+.formItemFour label{
+	font-size:25px;
+}
+
+.formItemFour input{
+	width: 305px;
+	font-size: 15px;
+	margin: 15px auto;
+	border-radius: 4px;
+	border: none;
+	padding: 12px;
+	background: none;
+	box-shadow: 1px 2px 10px #14171f;
+	background: skyblue;
+	transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.formItemFour input:hover{
+	padding: 14px;
+    font-size: 17px;
+    color: white;
+    box-shadow: 2px 2px 10px black;
+}
+
+.pageTwoFlexItemOne, .pageTwoFlexItemTwo{
+	display: flex;
+	flex-direction: column;
+}
+
+.linkShare{
+	margin: 20px auto;
+}
+
+.linkText{
+	font-size: 22px;
+	font-size: 22px;
+	background: orange;
+	padding: 10px;
+	width: 543px;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+.wrapper{
+	background: #FFB75E;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	border-radius: 10px;
+	margin-top: 18px;
+	opacity: 0.9;
+	margin: 18px auto 0;
+	width: 350px;
+}
+
+.drinkIdeasLink{
+	transform: rotate(7deg);
+	position: absolute;
+	bottom: 365px;
+    right: 165px;
+	background: darkcyan;
+	border-radius: 10px;
+	padding: 4px;
+	text-decoration: none;
+	transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.drinkIdeasLink a{
+	text-decoration: none;
+}
+
+.drinkIdeasLink a:hover{
+	color: black;
+}
+
+.drinkIdeasLink:hover{
+	background: cornflowerblue;
+	color: black;
+	padding: 15px;
+    box-shadow: 1px 1px 10px black;
+}
+
+footer{
+	padding-top: 45px;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
