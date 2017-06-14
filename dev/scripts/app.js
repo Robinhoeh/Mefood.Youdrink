@@ -19,7 +19,6 @@ import{
 
 const dbRef = firebase.database().ref('/list'); //attaching link between app and firebase 
 
-
 class SecondPage extends React.Component {
 	constructor() {
 		super();
@@ -36,8 +35,6 @@ class SecondPage extends React.Component {
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit= this.handleSubmit.bind(this);
 	}
-
-
 
 	  handleChange(e) { 
 	  	this.setState({
@@ -140,8 +137,6 @@ class SecondPage extends React.Component {
 		);
 	}
 }
-
- 
 
 class UserForm extends React.Component {
 	constructor(props) {
@@ -253,34 +248,13 @@ class App extends React.Component { //main app component
 	}
 }
 
-// componentDidMount() {
-//  const dbRef = firebase.database().ref('/list');
-//  dbRef.on('value', (response) => {
-//  console.log(response.val());
 
 
 ReactDOM.render(<App />, document.getElementById('app'));
 
 
 
-//Me food, You drinks - 
 
-//on a form
-//Who is throwing this party?
-//When is this party?
-//What time should people show up?
-
-//Create invite button
-// This populates a shareable link for you to send to people
-// data from this list stored in firebase
-
-//link takes you to "new page"(route) 
-
-//whats your name?
-//what drinks are you bringing? 
-//Add drink button (like a todo list)
-
-//p tag - wanna keep this party cheap? check out what beers are currently on sale at the lcbo
 
 
 
