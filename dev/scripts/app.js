@@ -101,6 +101,9 @@ class SecondPage extends React.Component {
 				  <h2> When: {this.state.partyInfo.whenParty}</h2>
 				  <h2> Time: {this.state.partyInfo.whatParty}</h2>
 				</div>
+				<div className='drinkIdeasLink'>
+					<a href="#">Drink ideas!</a>
+				</div>
 			</header>
 
 			<div className='container'>
@@ -113,9 +116,6 @@ class SecondPage extends React.Component {
 					 <div className='pageTwoFlexItemTwo'>
 						<label>What are you bringing to drink?</label>
 						<input type="text" name="currentItem" placeholder="ie. 6 pack, bottle of wine etc..." onChange={this.handleChange} value={this.state.currentItem} />
-					</div>
-					<div className='drinkIdeasLink'>
-						<a href="#">Drink ideas!</a>
 					</div>
 					<button>Add drinks ➕</button>
 				  </form>
@@ -134,6 +134,7 @@ class SecondPage extends React.Component {
 				  	})}
 				  </ul>
 			  </section>
+			  <Footer />
 			</div>
 		  </div>
 		);
@@ -225,7 +226,7 @@ class UserForm extends React.Component {
 export default function Footer() {
 	return (
 		<footer><a href="https://twitter.com/rdubcodes">
-		<span>&copy; &#xf099; Robin Watson</span></a><span> | 2017</span>
+		<span>&copy; Robin Watson</span></a><span> | 2017</span>
 		</footer>
 	)
 }

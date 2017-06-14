@@ -30,12 +30,23 @@ h2{
 	color: black;
 }
 
+
+	@media (max-width: 768px) {
+		h1{
+			font-size: 37px;
+		}
+		h2{
+			font-size: 28px;
+		}
+	}
+
 h3{
 	font-size: 30px;
 }
 
 h4{
 	font-size: 20px;
+	color: black;
 }
 
 main p{
@@ -67,11 +78,38 @@ ul{
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 li{
-	width: 25%;
+	width: 30%;
+	background: seagreen;
+	border-radius: 10px;
+	color: white;
+	margin: 10px 0;
 }
+
+
+
+	/* Landscape phone to portrait tablet */
+	@media (max-width: 768px) {
+		li{
+			width: 48%;
+		}
+	}
+
+	/* Landscape phones and down */
+	@media (max-width: 480px) {
+		li{
+			width: 100%;
+		}
+		h3{
+			font-size: 25px;
+		}
+		h4{
+			font-size: 17px;
+		}
+	}
 
 main{
 	display: flex;
@@ -97,58 +135,15 @@ form{
 	color: black;
 }
 
-
-
-.add-item button{
-	border-radius: 10px;
-	background: none;
-	border: none;
-	box-shadow: 1px 1px 1px slategrey;
-	background: darkcyan;
-	width: 200px;
-	margin: 30px auto;
-	padding: 6px;
-	font-size: 24px;
-	transition-duration: 0.3s;
-    cursor: pointer;
-	}
-
-.add-item button:hover{
-	box-shadow: 1px 1px 3px cyan;
-	color: darkcyan;
-	padding: 8px;
-	width: 30%;
-	color: black;
-}
-
-.display-item button{
-	border-radius: 10px;
-    background: none;
-    border: none;
-    box-shadow: 1px 1px 1px red;
-    background: darksalmon;
-    width: 141px;
-    margin: 30px auto;
-    padding: 1px;
-    font-size: 24px;
-    transition-duration: 0.3s;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.display-item button:hover{
-	box-shadow: 1px 1px 8px lavenderblush;
-	color: lavenderblush;
-	padding: 4px;
-	width: 161px;
-	background: indianred;
-}
-
-
-
 .formFlexContainer{
 	color: white;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
+
+
 
 
 .formItemOne, .formItemTwo{
@@ -159,6 +154,21 @@ form{
 	display: flex;
     justify-content: space-around;
 }
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 940px) {
+	}
+
+	/* Landscape phone to portrait tablet */
+	@media (max-width: 768px) {
+		.flexOneTwo{
+			flex-direction: column;
+		}
+	}
+
+	/* Landscape phones and down */
+	@media (max-width: 480px) {
+	}
 
 .formItemThree{
 	display: flex;
@@ -185,7 +195,7 @@ form{
 	padding: 12px;
 	background: none;
 	box-shadow: 1px 2px 10px #14171f;
-	background: skyblue;
+	background: darkcyan;
 	transition-duration: 0.4s;
     cursor: pointer;
 }
@@ -197,10 +207,7 @@ form{
     box-shadow: 2px 2px 10px black;
 }
 
-.pageTwoFlexItemOne, .pageTwoFlexItemTwo{
-	display: flex;
-	flex-direction: column;
-}
+
 
 .linkShare{
 	margin: 20px auto;
@@ -214,50 +221,6 @@ form{
 	width: 543px;
 	margin: 0 auto;
 	border-radius: 10px;
-}
-
-.wrapper{
-	background: #FFB75E;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	border-radius: 10px;
-	margin-top: 18px;
-	opacity: 0.9;
-	margin: 18px auto 0;
-	width: 350px;
-}
-
-.drinkIdeasLink{
-	transform: rotate(7deg);
-	position: absolute;
-	bottom: 365px;
-    right: 165px;
-	background: darkcyan;
-	border-radius: 10px;
-	padding: 4px;
-	text-decoration: none;
-	transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.drinkIdeasLink a{
-	text-decoration: none;
-}
-
-.drinkIdeasLink a:hover{
-	color: black;
-}
-
-.drinkIdeasLink:hover{
-	background: cornflowerblue;
-	color: black;
-	padding: 15px;
-    box-shadow: 1px 1px 10px black;
-}
-
-footer{
-	padding-top: 45px;
-	color: white;
 }
 
 

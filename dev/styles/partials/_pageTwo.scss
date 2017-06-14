@@ -1,0 +1,112 @@
+
+.add-item button{
+	border-radius: 10px;
+	background: none;
+	border: none;
+	box-shadow: 1px 1px 1px slategrey;
+	background: darkcyan;
+	width: 200px;
+	margin: 30px auto 0;
+	padding: 6px;
+	font-size: 24px;
+	transition-duration: 0.3s;
+    cursor: pointer;
+	}
+
+.add-item button:hover{
+	box-shadow: 1px 1px 3px cyan;
+	color: darkcyan;
+	padding: 8px;
+	color: black;
+}
+
+.display-item button{
+	border-radius: 10px;
+    background: none;
+    border: none;
+    box-shadow: 1px 1px 1px red;
+    background: darksalmon;
+    width: 141px;
+    margin: 10px auto;
+    padding: 1px;
+    font-size: 24px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.display-item button:hover{
+	box-shadow: 1px 1px 8px lavenderblush;
+	color: lavenderblush;
+	padding: 4px;
+	width: 161px;
+	background: indianred;
+}
+
+
+.wrapper{
+	background: #FFB75E;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ED8F03, #FFB75E); 
+	border-radius: 10px;
+	margin-top: 18px;
+	opacity: 0.9;
+	margin: 18px auto 40px;
+	width: 350px;
+	position: relative;
+}
+
+.drinkIdeasLink{
+	transform: rotate(7deg);
+	position: absolute;
+    right: 100px;
+    top: 250px;
+	background: darkcyan;
+	border-radius: 10px;
+	padding: 4px;
+	text-decoration: none;
+	transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+/* Landscape phone to portrait tablet */
+	@media (max-width: 768px) {
+		.drinkIdeasLink{
+			transform: none;
+			width: 354px;
+			background: darkcyan;
+			border-radius: 10px;
+			padding: 4px;
+			text-decoration: none;
+			transition-duration: 0.4s;
+			cursor: pointer;
+			margin: 10px auto;
+			position: initial;
+		}
+	}
+
+.drinkIdeasLink a{
+	text-decoration: none;
+}
+
+.drinkIdeasLink a:hover{
+	color: black;
+}
+
+.drinkIdeasLink:hover{
+	background: cornflowerblue;
+	color: black;
+	padding: 15px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.pageTwoFlexItemOne, .pageTwoFlexItemTwo{
+	display: flex;
+	flex-direction: column;
+}
+
+footer{
+	padding-top: 25px;
+	color: white;
+}
+
