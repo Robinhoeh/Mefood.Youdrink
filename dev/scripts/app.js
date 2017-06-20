@@ -169,9 +169,8 @@ class UserForm extends React.Component {
 			}
 
 			dbRef.update(updates);
-		// dbRef.push(this.state.whoParty); //pushing user from input to firebase
-		// dbRef.push(this.state.whenParty);
-		// dbRef.push(this.state.whatParty);
+ //pushing user from input to firebase
+
 		this.setState({ //clears input on submit button push
 			whoParty: '',
 			whenParty: '',
@@ -179,7 +178,7 @@ class UserForm extends React.Component {
 			listKey
 		});
 	}
-
+ 
 	render() {
 		return (
 			<div className='pageOneWrapper'>
